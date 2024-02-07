@@ -34,16 +34,7 @@ const songs = [
   },
 ];
 
-// Check if Playing
 let isPlaying = true;
-
-// Play
-function playSong() {
-  isPlaying = true;
-  playBtn.classList.replace("fa-play", "fa-pause");
-  playBtn.setAttribute("title", "Pause");
-  music.play();
-}
 
 // Pause
 function pauseSong() {
@@ -52,6 +43,15 @@ function pauseSong() {
   playBtn.setAttribute("title", "Play");
   music.pause();
 }
+// Play
+function playSong() {
+  isPlaying = true;
+  playBtn.classList.replace("fa-play", "fa-pause");
+  playBtn.setAttribute("title", "Pause");
+  music.play();
+}
+
+
 
 // Play or Pause Event Listener
 playBtn.addEventListener("click", function () {
