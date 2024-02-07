@@ -75,6 +75,13 @@ body {
 }
 
 
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
 h2 {
   font-size: 25px;
   text-align: center;
@@ -98,13 +105,7 @@ h3 {
   width: 90%;
 }
 
-.progress {
-  background: #242323;
-  border-radius: 5px;
-  height: 100%;
-  width: 0%;
-  transition: width 0.1s linear;
-}
+
 
 .duration-wrapper {
   position: relative;
